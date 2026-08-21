@@ -1,4 +1,4 @@
-C = float(input(print("Bindame la temperatura a calcular de grados Celcius a Fahrenheit")))
+C = float(input("Bindame la temperatura a calcular de grados Celcius a Fahrenheit"))
 
 F = (C*9 / 5) + 32
 
