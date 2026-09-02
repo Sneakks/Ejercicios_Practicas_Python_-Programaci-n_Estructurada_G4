@@ -1,10 +1,13 @@
+import os
 from Situación_1 import inventarioPulperia
 from Situación_2 import promocionTienda
 from Situación_3 import metaVentas
 from Situación_4 import entregaComedor
 from Situación_5 import pesoProductos
+from Ejercicio_1_if_anidado import  creditoInterno
 
 def main ( ):
+    os.system("cls")
     while True:
         print("*******************************")
         print("Menú Principal / Ejercicios S2")
@@ -14,7 +17,7 @@ def main ( ):
         print("3. Meta de ventas")
         print("4. Entrega de un comedor")
         print("5. Peso de productos")
-        print("6. Salir del menú")
+        print("11. Salir del menú")
         print("*******************************")
         opcion = input("Digite la opción de su preferencia: ")
 
@@ -34,6 +37,8 @@ def main ( ):
             pesoProductos()
             input("Ingrese enter para volver al menú")
         elif opcion == "6":
+            creditoInterno()
+        elif opcion == "11":
             print("*****************************************")
             print("Muchas gracias por utilizar el programa")
             print("*****************************************")

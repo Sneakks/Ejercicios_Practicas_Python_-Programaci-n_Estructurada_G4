@@ -1,0 +1,10 @@
+def operacionNum():
+    try:
+            numero = int(input("Número: "))
+            print(100 / numero)
+    except ValueError:
+            print("Debe ingresar un entero.")
+    except ZeroDivisionError:
+            print("No se puede dividir entre cero.")
+    finally:
+            print("Proceso finalizado.")

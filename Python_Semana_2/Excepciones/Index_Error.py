@@ -1,0 +1,11 @@
+def accederLista():
+
+    nombres = ["Ana", "Luis", "Marta"]
+
+    try:
+        posicion = int(input("Posición: "))
+        print(nombres[posicion])
+    except ValueError:
+        print("La posición debe ser un entero.")
+    except IndexError:
+        print("La posición no existe.")
