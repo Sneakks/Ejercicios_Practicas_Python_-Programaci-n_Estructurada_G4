@@ -9,32 +9,56 @@ from Ejercicio_2_if_anidado import servicioEntrega
 from Ejercicio_3_if_anidado import clasificaciónCafe
 from Ejercicio_4_if_anidado import reservaHospedaje
 from Ejercicio_5_if_anidado import ventaFerreteria
+from Ejercicio_for_1 import ventasMiniSuper
+from Ejercicio_for_2 import recepciónCafe
+from Ejercicio_for_3 import recepcionInventario
+from Ejercicio_for_4 import produccionPan
+from Ejercicio_for_5 import evaluacionServicio
+from While_1 import cierreCaja
+from While_2 import accesoSistema
+from While_3 import pedidoDistribuidor
+from While_4 import combustibleReparto
+from While_5 import reposicionExistencias
 
 def main():
     opc = 0
-    while opc != 11:
+    while opc != 21:
         os.system("cls")
         print("******* Menú de funciones *********")
+        print("#### Ejercicios If ####")
         print("1 - Inventario de pulpería")
         print("2 - Promoción de una tienda")
         print("3 - Meta de Ventas")
         print("4 - Entrega de un comedor")
         print("5 - Peso productos")
+        print("********* Ejercicio if Anidados *********")
         print("6 - Credito Interno")
         print("7 - Servicio de Entrega")
         print("8 - Clasificación de café")
         print("9 - Reserva de hospedaje")
         print("10 - Venta de ferretería")
-        print("11 - Salir del programa")
+        print("********* Bucles For *********")
+        print(" 11 - Ventas de un minisúper")
+        print("12 - Recepción de café")
+        print("13 - Revisión de inventario")
+        print("14 - Producción de Pan")
+        print("15 - Evaluación de un servicio")
+        print("********* Bucles While *********")
+        print("16 - Cierre de caja")
+        print("17 - Acceso al sistema")
+        print("18 - Cantidad de un pedido")
+        print("19 - Combustible de reparto")
+        print("20 - Reposición de existencias")
+        print("21 - Salir del programa")
         print("-"*40)
         
         try:
-            opc = int(input("Selccione una opción: "))
+            opc = int(input("Seleccione una opción: "))
         except ValueError:
             print("Por favor solo ingrese números enteros que se encuentren dentro del menú.")
             os.system("pause")
             continue
-        print("-"*30)
+        print("-"*40)
         #Invocar una función según opción menú seleccionada
         match opc:
             case 1:
@@ -58,9 +82,29 @@ def main():
             case 10:
                 ventaFerreteria()
             case 11:
+                ventasMiniSuper()
+            case 12:
+                recepciónCafe()
+            case 13:
+                recepcionInventario()
+            case 14:
+                produccionPan()
+            case 15:
+                evaluacionServicio()
+            case 16:
+                cierreCaja()
+            case 17:
+                accesoSistema()
+            case 18:
+                pedidoDistribuidor()
+            case 19:
+                combustibleReparto()
+            case 20:
+                reposicionExistencias()
+            case 21:
                     print("Adiós, hasta pronto")
             case _:
                     print("Opción incorrecta")
-        if opc != 11:
+        if opc != 21:
             os.system("pause")
 main()

@@ -1,10 +1,14 @@
+import os
 def operacionNum():
-    try:
-            numero = int(input("Número: "))
-            print(100 / numero)
-    except ValueError:
-            print("Debe ingresar un entero.")
-    except ZeroDivisionError:
-            print("No se puede dividir entre cero.")
-    finally:
-            print("Proceso finalizado.")
+        os.system("cls")
+        try:
+                numero = int(input("Número: "))
+                print(100 / numero)
+        except ValueError:
+                print("Debe ingresar un entero.")
+        except ZeroDivisionError:
+                print("No se puede dividir entre cero.")
+        finally:
+                print("Proceso finalizado.")
+
+operacionNum()
