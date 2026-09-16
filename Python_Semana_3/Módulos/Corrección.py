@@ -79,5 +79,4 @@ def main():
     mostrar_factura(nombre, precio, cantidad, porcentaje, impuesto, total, subtotal, descuento, iva)
 
 
-if __name__ == "__main__":
     main()
