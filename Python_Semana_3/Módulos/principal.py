@@ -13,12 +13,12 @@ def main():
     #Invocación a leer nombre
     nombre = leer_nombre(mensaje)
 
-    #Lectura de datos con validación
+    #Lectura de datos con validación 
     precio = leer_numero("Digite el precio del artículo: ")
     cantidad = int(leer_numero("¿Cuántas unidades va a comprar?: "))
     porcentaje = leer_numero("Digite el porcentaje de descuento (Ej: 0.10): ")
 
-    #Invocación a calcular_total
+    #Invocación para mandar a llamar a calcular_total
     total,subtotal,descuento,iva = calcular_total(precio,cantidad,porcentaje,impuesto)
 
     mostrar_factura(nombre,precio,cantidad,porcentaje,impuesto,total,subtotal,descuento,iva)
